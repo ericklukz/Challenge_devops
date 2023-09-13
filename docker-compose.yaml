@@ -1,0 +1,27 @@
+version: '3.7'
+
+services:
+  myapp:
+    build:
+      context: ./aime
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+    volumes:
+      - myapp_data:/app/data
+
+  oracle-server-db:
+    container_name: oracle-server-db
+    image: gvenzl/oracle-xe:latest
+    ports:
+      - "1521:1521"
+    environment:
+      - ORACLE_PASSWORD=SuperPassword@22
+
+      # service name: XEPDB1
+
+      
+
+volumes:
+  myapp_data:
