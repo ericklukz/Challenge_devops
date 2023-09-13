@@ -1,4 +1,30 @@
-# Sprint Digital Business Enablement 
+# Execução
+Json de execução no endpoint LOGIN
+```
+{
+    "username":"caio2132@gmail.com",
+    "senha":"ola123"
+}
+```
+
+Após receber o token, adicione o mesmo em Bearer Token do endpoint do Cadastro(por conta da security)
+
+Json de execução no endpoint Cadastro
+```
+{
+    "nome": "blaberz",
+    "email": "ca2132@gmail.com",
+    "cpf": "4456668881",
+    "rg": "645556667",
+    "senha": "@lla123",
+    "dtNascimento": "20/09/1998",
+    "status": "I",
+    "nomeSocial": "N/A",
+    "telefoneCliente": [],
+    "enderecoCliente": [],
+    "compras": []
+}
+```
 
 # ProjetoAssistente GPT
 
